@@ -1,6 +1,5 @@
 This Is Simple Math Game
 
-To Win You Must Solve 10 problems 
-If You Solved Three Problems Incorrectly, You Lose
+To Win You Must Solve 10 problems
 
-فف
+If You Solved Three Problems Incorrectly, You Lose
