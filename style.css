@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main-ui {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.problem {
+    color: #555;
+    font-size: 5rem;
+}
+
+.text {
+    color: #555;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+h1 {
+    color: #555;
+    margin-top: 20px;
+    font-size: 5rem;
+}
+
+button {
+    background-color: #7ecc00;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.end-btn {
+    background-color: #7ecc00;
+    border: none;
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    outline: #7ecc00;
+    font-size: 18px;
+    color: #555;
+}
+
+.boxes {
+    display: flex;
+    width: 100%;
+}
+
+.progress {
+    border: 1px solid #c7c7c7;
+    border-right: none;
+    position: relative;
+}
+
+.progress-inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #7ecc00;
+    opacity: .57;
+    transform: scaleX(0);
+    transform-origin: center left;
+    transition: transform .4s ease-out;
+}
+
+.box {
+    height: 40px;
+    border-right: 1px solid #c7c7c7;
+    flex: 1;
+}
+
+body.overlay-is-open .overlay {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+body.overlay-is-open .main-ui {
+    filter: blur(4px);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.82);
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all .33s ease-out;
+}
+
+.overlay p {
+    color: #555;
+    font-weight: bold;
+    font-size: 70px;
+    margin-left: 24px;
+}
+
+.wrong {
+    animation: .451s showError;
+}
+
+@keyframes showError {
+    50% {
+        color: red;
+        transform: scale(1.2);
+    }
+
+    100% {
+        color: #555;
+        transform: scale(1);
+    }
+}

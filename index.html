@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Math Game</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="main-ui">
+            <h1>Math Game</h1>
+            <p class="problem" id="problem"></p>
+            <form action="" class="form">
+                <input type="text" autofocus class="field" autocomplete="off" spellcheck="false">
+                <button>Submit</button>
+            </form>
+            <p class="text">You Need <span id="points">10</span> more points, and are allowed to make <span id="worng">2</span> more mistakes.</p>
+            <div class="progress">
+                <div class="boxes">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="progress-inner"></div>
+            </div>
+        </div>
+        <div class="overlay">
+            <div class="overlay-inner">
+                <p class="end-mess"></p>
+                <button class="end-btn">Start Over</button>
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
