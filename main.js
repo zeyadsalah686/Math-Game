@@ -7,7 +7,7 @@ const progressBar = document.querySelector(".progress-inner");
 const endMess = document.querySelector(".end-mess");
 const endBtn = document.querySelector(".end-btn");
 
-let operators = ["+", "-", "x", "÷"];
+let operators = ["+", "-", "x"];
 let state = {
     score: 0,
     wrongAnswers: 0,
@@ -56,9 +56,6 @@ form.addEventListener("submit", (e) => {
     }
     if (state.currentProblem.op == "x") {
         correctAnswer = state.currentProblem.num1 * state.currentProblem.num2;
-    }
-    if (state.currentProblem.op == "÷") {
-        correctAnswer = state.currentProblem.num1 / state.currentProblem.num2;
     }
     if (parseInt(input.value, 10) === correctAnswer ) {
         state.score += 1;
