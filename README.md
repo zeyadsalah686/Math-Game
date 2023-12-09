@@ -6,7 +6,7 @@ If You Solved Three Problems Incorrectly, You Lose
 
 ########################################################
 
-I Try To Cover Most Important Topics In HTML, CSS, JAVASCRIPT And Github
+I Try To Cover Most Important Topics In HTML, CSS, JAVASCRIPT And Git
 
 ########################################################
 
