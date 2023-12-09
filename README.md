@@ -6,8 +6,8 @@ If You Solved Three Problems Incorrectly, You Lose
 
 ########################################################
 
-I Try To Cover Most Important Topics In HTML, CSS, JAVASCRIPT
+I Try To Cover Most Important Topics In HTML, CSS, JAVASCRIPT And Github
 
 ########################################################
 
-This For My Portfilo
+This Is For My Portfilo
