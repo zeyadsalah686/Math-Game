@@ -6,8 +6,6 @@ const worngs = document.querySelector("#worng");
 const progressBar = document.querySelector(".progress-inner");
 const endMess = document.querySelector(".end-mess");
 const endBtn = document.querySelector(".end-btn");
-const score_data = document.querySelector(".score");
-const worng_data = document.querySelector(".wrong-answers");
 
 let operators = ["+", "-", "x"];
 let state = {
@@ -87,7 +85,7 @@ function checkLogic() {
         },331); 
     }
 
-    if (state.wrongAnswers === 4) {
+    if (state.wrongAnswers === 3) {
         endMess.textContent = "You Lost !!";
         document.body.classList.add("overlay-is-open");
         setTimeout(() => {
@@ -104,7 +102,7 @@ function resetGame() {
     state.wrongAnswers = 0;
     points.textContent = 10;
     worngs.textContent = 2;
-    document.body.classList.remove("overlay-is-open");  
+    document.body.classList.remove("overlay-is-open");   
     renderProgressBar();
 }
 
