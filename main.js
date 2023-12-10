@@ -23,7 +23,7 @@ function updateProblem() {
     ${state.currentProblem.num2}
     `;
     score_data.innerHTML = `Score: ${state.score}`;
-    worng_data.innerHTML = `Worng Answers: ${state.wrongAnswers}`;
+    worng_data.innerHTML = `Wrong Answers: ${state.wrongAnswers}`;
     input.value = ""
     input.focus()
 }
@@ -106,7 +106,9 @@ function resetGame() {
     state.wrongAnswers = 0;
     points.textContent = 10;
     worngs.textContent = 2;
-    document.body.classList.remove("overlay-is-open");   
+    document.body.classList.remove("overlay-is-open");  
+    score_data.innerHTML = `Score: 0`;
+    worng_data.innerHTML = `WrongAnswers: 0`;
     renderProgressBar();
 }
 
