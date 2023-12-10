@@ -22,8 +22,6 @@ function updateProblem() {
     ${state.currentProblem.op}
     ${state.currentProblem.num2}
     `;
-    score_data.innerHTML = `Score: ${state.score}`;
-    worng_data.innerHTML = `Wrong Answers: ${state.wrongAnswers}`;
     input.value = ""
     input.focus()
 }
@@ -107,8 +105,6 @@ function resetGame() {
     points.textContent = 10;
     worngs.textContent = 2;
     document.body.classList.remove("overlay-is-open");  
-    score_data.innerHTML = `Score: 0`;
-    worng_data.innerHTML = `WrongAnswers: 0`;
     renderProgressBar();
 }
 
